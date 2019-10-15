@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title style="text-align: center">show-results-scores</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="one">
+  <ion-list *ngFor="let x of gameScores">
+    <ion-button [routerLink]="['/show-specific-results',x.key]">{{x.score}}</ion-button>
+  </ion-list>
+</ion-content>

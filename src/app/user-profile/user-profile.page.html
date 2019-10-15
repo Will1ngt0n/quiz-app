@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-toolbar style="text-align: center" color="primary">
+      <ion-buttons slot ="start">
+        <ion-menu-button>
+        </ion-menu-button>
+      </ion-buttons>
+      
+      <ion-title display="inline-block;" Home>
+       Profile
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+<ion-content class="one">
+  <ion-item>
+    <ion-icon name="camera" (click)="openAlert();"></ion-icon>
+    <img [src]="currentPhoto">
+  </ion-item>
+  <ion-list>
+    <ion-item>
+      <div>Username: {{userProfile.username}}</div>
+    </ion-item>
+    <ion-item>
+      <div>Email: {{userProfile.email}} </div>
+    </ion-item>
+    <ion-item>
+      <div>Display name: {{userProfile.displayName}} </div>
+    </ion-item>
+  </ion-list>
+  
+</ion-content>

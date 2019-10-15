@@ -1,0 +1,53 @@
+
+<ion-content class="one">
+  <form  class="form" [formGroup]="registrationForm" style="padding: 20px 50px; ">
+    <h1 class="header">Register</h1>
+    <div class="form-divider">
+        <ion-item class="inputItems">
+        <ion-label position="floating">Name </ion-label>
+        <ion-input formControlName="name"></ion-input>
+      </ion-item>
+      <!-- <ion-item class="inputItems">
+        <ion-label position="floating">Age </ion-label>
+        <ion-input formControlName="age"></ion-input>
+      </ion-item>
+      <ion-list>
+        <ion-radio-group formControlName="gender" (ionChange)="addGender($event)">
+          <ion-list-header>
+            <ion-label>Gender</ion-label>
+          </ion-list-header>
+      
+          <ion-item class="inputItems">
+            <ion-label>Male</ion-label>
+            <ion-radio slot="start" value="male"></ion-radio>
+          </ion-item>
+      
+          <ion-item class="inputItems">
+            <ion-label>Female</ion-label>
+            <ion-radio slot="start" value="female"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list> -->
+      <ion-item class="inputItems">
+        <ion-label position="floating">Email </ion-label>
+        <ion-input formControlName="email"></ion-input>
+      </ion-item>
+      <ion-item class="inputItems">
+        <ion-label position="floating">Username </ion-label>
+        <ion-input formControlName="username"></ion-input>
+      </ion-item>
+      <ion-item class="inputItems">
+        <ion-label position="floating">Password: </ion-label>
+        <ion-input formControlName="password"></ion-input>
+      </ion-item>
+      <ion-item class="inputItems">
+        <ion-label position="floating">Confirm password: </ion-label>
+        <ion-input formControlName="confirmPassword"></ion-input>
+      </ion-item>
+    </div>
+    <br/><br/>
+    <ion-button class="form-buttons" (click)="addUser();" [disabled]="!registrationForm.valid">Register</ion-button><br/>
+    <a  class="form-link" [routerLink]="['/login']">I have an account</a>
+  </form>
+</ion-content>
+

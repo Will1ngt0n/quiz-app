@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar style="text-align: center" color="primary">
+    <ion-buttons slot ="start">
+      <ion-menu-button>
+      </ion-menu-button>
+    </ion-buttons>
+    
+    <ion-title display="inline-block;" Home>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="one">
+  <img src="{{logo}}">
+  <ion-card color="tertiary" style="padding: 10px;">
+    <h4 style="text-align: center">How to play</h4>
+    <ion-button expand="block" [routerLink]="['/choose-category']">Play</ion-button>
+  </ion-card>
+  <ion-button expand="block" (click)="showResults();">Results</ion-button>
+</ion-content>
+<footer>
+  
+</footer>
